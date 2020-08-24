@@ -1,0 +1,301 @@
+*{
+	margin: 0;padding: 0;box-sizing: border-box; 
+}
+
+header {
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('../img/cookies.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+nav{
+	width: 100%;height: 15vh;
+	background: rgba(0,0,0,0.2);
+	color: white;display: flex;justify-content: space-between;
+	align-items: center;text-transform: uppercase;
+}
+
+nav .logo{
+	width: 25%;text-align: center;
+	text-decoration: none; color: pink;
+	font-weight: bold;	 
+	/*background: red;*/
+}
+
+nav .menu{
+	width: 40%;
+	display: flex;justify-content: space-around;
+}
+
+nav .menu a{
+	width: 25%;
+	text-decoration: none; color: white;
+	font-weight: bold;	 
+}
+
+nav .menu a:first-child{
+	color: #00b894;
+
+}
+
+main{
+	height: 100%;
+	width: 85vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;color: white;
+}
+
+section h3{
+	font-size: 35px;font-weight: 200;letter-spacing: 3px;
+	text-shadow: 1px 1px 2px black;
+}
+
+section h1{
+	margin: 30px; 0 20px 0;
+	font-size: 55px;
+	font-weight: 700;
+	text-shadow: 2px 1px 5px black;
+	text-transform: uppercase;
+}
+
+section p{
+	font-size: 25px;
+	color: #eee;
+	white-space: 2px;
+	margin-bottom: 25px;
+	text-shadow: 1px 1px 1px black;
+}
+
+section a{
+	padding: 12px 30px;
+	border-radius: 4px;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 500;
+	text-decoration: none;
+	letter-spacing: 1px;
+	transition: all .5s ease;
+}
+
+section .btnone{
+    /*background: #00b894;*/
+    background: #fff;
+    color: #000;
+}
+.btnone:hover{
+	background: #00b894;
+	color: white; 
+}
+
+section .btntwo{
+	background: #00b894;
+	color: white; 
+}
+
+.btntwo:hover{
+	background: #fff;
+    color: #000;
+}
+
+.change_content:after{
+	content: '';
+	animation: changetext 10s infinite linear;
+	color: #00b894;
+}
+
+
+label { 
+margin-left: 0.5em; 
+cursor: pointer; 
+} 
+
+body {
+  background-color:  #fff685;
+  color: blue;
+}
+
+.  li { 
+list-style: upper-alpha; 
+} 
+
+.answers li { 
+list-style: upper-alpha; 
+}
+
+/* BOX SIZING RESET */
+
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+/* --- GENERAL --- */
+
+article {
+	border: 2px solid;
+	font-family: Helvetica, Arial, sans-serif;
+	padding: 10px 15px;
+	width: 680px;
+}
+
+dd,
+dl,
+dt {
+	display: inline-block;
+	margin: 0;
+}
+
+h1,
+h2,
+p {
+	margin: 0;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	border-top: 30px solid;
+	font-size: 1rem;
+	margin-top: 5px;
+	padding: 10px 0;
+}
+
+html {
+	font-size: 28px;
+}
+
+sup {
+	vertical-align: 3px;
+}
+
+/* --- END GENERAL --- */
+
+/* --- HEADER --- */
+
+header {
+	border-bottom: 15px solid;
+	margin-bottom: 10px;
+}
+
+	header dl {
+		border-top: 1px solid;
+		padding: 5px 0;
+		width: 50%;
+	}
+
+		header dl:first-of-type dt {
+			font-weight: bold;
+		}
+
+		header dl:last-of-type {
+			text-align: right;
+		}
+
+/* --- END HEADER --- */
+
+/* --- MAIN TABLE --- */
+
+article > table dt {
+	font-weight: bold;
+}
+
+article > table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+	article > table tbody td {
+		border-top: 1px solid;
+		padding: 2px 0;
+	}
+
+		article > table tbody td:last-child {
+			text-align: right;
+		}
+
+	article > table tbody:first-of-type td:last-child {
+		font-weight: bold;
+	}
+
+	article > table tbody:last-of-type tr:first-child td {
+		border-top-width: 20px;
+	}
+
+	article > table tbody:last-of-type tr:last-child td {
+		border-bottom: 1px solid;
+	}
+
+	article > table td {
+		width: 0;
+	}
+
+		article > table td:empty + td dt {
+			font-weight: normal;
+		}
+
+		article > table td:empty:first-child {
+			width: 1em;
+			border-top-style: none;
+		}
+
+	article > table tfoot td {
+		font-size: 0.9rem;
+		padding-left: 0.7rem;
+		padding-top: 0.5rem;
+		text-indent: -0.7rem;
+	}
+
+	article > table thead th {
+		text-align: right;
+	}
+
+/* --- END MAIN --- */
+
+/* --- ASIDE --- */
+
+aside {
+	margin-bottom: 5px;
+	margin-top: 13px;
+	font-size: 0.8rem;
+}
+
+	aside table {
+		border-collapse: collapse;
+		text-align: left;
+		width: 100%;
+	}
+
+	aside tbody td {
+		padding: 2px 0;
+	}
+
+		aside tbody td:first-child {
+			width: 37%;
+		}
+
+	aside tbody tr:last-child td:first-child,
+	aside tbody tr:nth-child(2) td:first-child {
+		text-indent: 1.5em;
+	}
+
+	aside tbody td:not(:first-child) {
+		width: 21%;
+	}
+
+	aside thead td,
+	aside thead th {
+		border-bottom: 1px solid;
+	}
+
+	aside thead th {
+		font-weight: normal;
+	}
+
+/* --- END ASIDE --- */

@@ -25,7 +25,8 @@ namespace MVC_EF_Start
 
       // added from MVC template
       services.AddMvc();
-    }
+            services.AddApplicationInsightsTelemetry();
+        }
 
     // this is the version from the MVC template
     public void Configure(IApplicationBuilder app, IHostingEnvironment env)

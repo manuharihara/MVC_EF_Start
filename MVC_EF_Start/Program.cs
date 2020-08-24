@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Text;
+using System.Net;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -21,5 +23,18 @@ namespace MVC_EF_Start
         WebHost.CreateDefaultBuilder(args)
             .UseStartup<Startup>()
             .Build();
-  }
+
+        // Enter a valid subscription key.
+        const string accessKey = "enter key here";
+        /*
+         * If you encounter unexpected authorization errors, double-check this value
+         * against the endpoint for your Bing Web search instance in your Azure
+         * dashboard.
+         */
+        const string uriBase = "https://api.cognitive.microsoft.com/bing/v7.0/search";
+        const string searchTerm = "Microsoft Cognitive Services";
+    }
+
+
+
 }

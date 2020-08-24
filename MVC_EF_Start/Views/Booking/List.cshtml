@@ -1,0 +1,21 @@
+﻿@model MVC_EF_Start.Models.BookingListViewModel
+
+@{
+    Layout="_LayoutBooking";
+	ViewData["Title"] = "Reservations";
+}
+
+<div class="container-fluid">
+    
+    <div class="row">
+        <div class="col-xs-9">
+            <h2>Your Reservations</h2>
+        </div>
+        <div class="col-xs-3">
+            @Html.ActionLink("Book your visit", "AddBooking",new { @returnUrl = Request.Url.PathAndQuery}, new { @class = "btn btn-success pull-right" })
+        </div>
+    </div>
+    @foreach (var b in Model.Bookings) {
+        @Html.Partial("BookingSummary", b);
+    }
+</div>

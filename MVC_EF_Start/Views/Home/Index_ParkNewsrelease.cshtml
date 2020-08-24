@@ -1,0 +1,29 @@
+﻿@model MVC_EF_Start.Models.Parks
+
+@{
+    ViewBag.Title = "Index_ParkNewsrelease";
+}
+
+<h2>Parks Data :</h2>
+
+<table class="table table-bordered table-responsive table-hover">
+    <tr>
+
+        <th>parkCode </th>
+        <th>fullName </th>
+        <th>latLong </th>
+
+    </tr>
+    @foreach (MVC_EF_Start.Models.Park park in Model.data)
+    {
+        <tr>
+
+            <td>@park.parkCode</td>
+            <td>@park.fullName</td>
+            <td>@park.latLong</td>
+
+
+        </tr>
+
+    }
+</table>
