@@ -1,12 +1,11 @@
 ﻿using MVC_EF_Start.Models;
-using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System;
 using System.Net.Http;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-
+using Microsoft.AspNetCore.Mvc;
 
 namespace MVC_EF_Start.Controllers
 {
