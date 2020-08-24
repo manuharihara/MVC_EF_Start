@@ -24,16 +24,7 @@ namespace MVC_EF_Start
             .UseStartup<Startup>()
             .Build();
 
-        // Enter a valid subscription key.
-        const string accessKey = "enter key here";
-        /*
-         * If you encounter unexpected authorization errors, double-check this value
-         * against the endpoint for your Bing Web search instance in your Azure
-         * dashboard.
-         */
-        const string uriBase = "https://api.cognitive.microsoft.com/bing/v7.0/search";
-        const string searchTerm = "Microsoft Cognitive Services";
-    }
+      }
 
 
 

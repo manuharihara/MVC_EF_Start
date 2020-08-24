@@ -5,7 +5,7 @@
 }
 
 
-<h2>Parks Data :</h2>
+<h2>We Cater food to Family Picnics and  below are Loacal Parks That We Deliver food :</h2>
 
 <div><b>Table Format Data Displaying in ForEach</b><br /></div>
 <table class="table table-bordered table-responsive table-hover">
@@ -13,19 +13,23 @@
 
         <th>parkCode </th>
         <th>fullName </th>
+        <th>Park Info </th>
         <th>latLong </th>
+        
 
     </tr>
     @foreach (MVC_EF_Start.Models.Park park in Model.data)
     {
-        <tr>
+<tr>
 
-            <td>@park.parkCode</td>
-            <td>@park.fullName</td>
-            <td>@park.latLong</td>
+    <td>@park.parkCode</td>
+    <td>@park.fullName</td>
+    <td>@park.url</td>
+    <td>@park.latLong</td>
 
 
-        </tr>
+
+</tr>
 
     }
 </table>

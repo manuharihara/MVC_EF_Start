@@ -3,7 +3,64 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MVC_EF_Start.Models
 {
-  public class Company
+    /*
+    public partial class Student
+    {
+        public Student()
+        {
+            this.Courses = new HashSet<Course>();
+        }
+
+        public int StudentID { get; set; }
+        public string StudentName { get; set; }
+        public byte[] RowVersion { get; set; }
+
+        public virtual ICollection<Course> Courses { get; set; }
+    }
+
+   
+    public partial class Course
+    {
+        public Course()
+        {
+            this.Students = new HashSet<Student>();
+        }
+
+        public int CourseId { get; set; }
+        public string CourseName { get; set; }
+        
+        public virtual ICollection<Student> Students { get; set; }
+    }
+
+    /*
+    public class Course
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+
+        public List<Enrolment> enrolments { get; set; }
+    }
+
+    public class Student
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+
+        public List<Enrolment> enrolments { get; set; }
+    }
+
+    public class Enrolment
+    {
+        public int CourseId { get; set; }
+        public int StudentId { get; set; }
+
+        public Course Course { get; set; }
+        public Student Student { get; set; }
+
+        public string Grade { get; set; }
+    }
+    /*
+    public class Company
   {
     [Key]
     public string symbol { get; set; }
@@ -38,31 +95,8 @@ namespace MVC_EF_Start.Models
     public Quote[] chart { get; set; }
   }
 
-    public class Course
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
+*/
 
-        public List<Enrolment> enrolments { get; set; }
-    }
-
-    public class Student
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-
-        public List<Enrolment> enrolments { get; set; }
-    }
-
-    public class Enrolment
-    {
-        public int Id { get; set; }
-
-        public Course course { get; set; }
-        public Student student { get; set; }
-
-        public string grade { get; set; }
-    }
 
 
 }

@@ -1,0 +1,34 @@
+﻿@model MVC_EF_Start.Models.Orders
+
+@{
+    ViewData["Title"] = "Order";
+}
+
+<h2>Hello Guest:</h2>
+
+<p>Enter Your Order Details:</p>
+
+<form asp-controller="Home" asp-action="Orders" method="post">
+    <p>Your Phone number: <input asp-for="OrderID" /></p>
+    <p>Your Name: <input asp-for="CustomerName" /></p>
+    <p>Meal Type: <input asp-for="OrderCategory" /></p>
+    <p>Menu Item No: <input asp-for="MealID" /></p>
+    <p>Quantitiy: <input asp-for="Quantity" /></p>
+    <p>Provide Special Instructions: <input asp-for="Messege" /></p>
+
+    <button type="submit">Submit</button>
+
+    <p>Note: Page is under maintenance and we are Order forms with DB:</p>
+
+</form>
+
+<a href="/home">Home page in html</a>
+<p>
+
+</p>
+<a asp-controller="Home"
+   asp-action="Index"
+   asp-route-id="12">
+    Home page
+</a>
+

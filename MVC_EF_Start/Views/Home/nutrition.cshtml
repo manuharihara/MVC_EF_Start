@@ -1,34 +1,8 @@
-﻿@model MVC_EF_Start.Models.FoodNutrients
+﻿@model MVC_EF_Start.Models.Parks
 
 @{
-    ViewData["Title"] = "Index";
+    Layout = null;
 }
-
-    <h2>FoodNutrients Data :</h2>
-
-<div><b>Table Format Data Displaying in ForEach</b><br /></div>
-<table class="table table-bordered table-responsive table-hover">
-    <tr>
-
-        <th>unitName </th>
-        <th>name </th>
-        <th>rank </th>
-
-    </tr>
-    @foreach (MVC_EF_Start.Models.nutrient nutrient in Model.nutrients)
-    {
-        <tr>
-
-            <td>@nutrient.unitName</td>
-            <td>@nutrient.name</td>
-            <td>@nutrient.rank</td>
-
-
-        </tr>
-
-    }
-</table>
-
 
 <head>
     <link rel="stylesheet" href="~/css/home.css">
